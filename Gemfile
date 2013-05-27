@@ -18,4 +18,6 @@ group :doc do
 end
 
 gem 'haml-rails'
+gem 'haml_coffee_assets'
+gem 'execjs'
 

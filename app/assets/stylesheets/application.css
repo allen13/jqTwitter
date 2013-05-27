@@ -16,3 +16,12 @@
   padding-top: 60px;
   padding-left: 20px;
 }
+
+.table th{
+  text-align: center;
+}
+
+.scroll{
+  height: 500px !important;
+  overflow: scroll;
+}

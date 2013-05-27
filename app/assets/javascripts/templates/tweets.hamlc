@@ -1,0 +1,3 @@
+-for tweet in @tweets
+  %tr
+    %td.tweet= tweet.text
