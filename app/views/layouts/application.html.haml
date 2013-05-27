@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title JqTwitter
+    = stylesheet_link_tag    "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag    "//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css", media: "all", "data-turbolinks-track" => true
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = javascript_include_tag "//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    .navbar.navbar-fixed-top
+      %nav.navbar-inner
+        .container
+          = link_to "JqTwitter", root_path, :class => 'brand'
+
+          %ul.nav
+            %li=link_to "Twitter Api","https://dev.twitter.com/docs/api/1.1"
+            %li=link_to "Reference Example", "http://www.queness.com/post/8567/create-a-dead-simple-twitter-feed-with-jquery"
+    #main{:role => "main"}
+      .container
+        .content
+          =yield
